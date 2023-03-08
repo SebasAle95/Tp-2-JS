@@ -1,22 +1,19 @@
-let numrep = prompt("Introduce numero de repeticiones");
+let repeticiones = parseInt(prompt('ingrese un numero de repeticiones del 1 al 50'));
 
-if (Number(numrep) == numrep) {
+
+if(repeticiones > 0 && repeticiones <= 50){
+
+
+for(let fila = repeticiones; fila >= 1; fila--){
+
+    if(repeticiones > 0 && repeticiones <=50)
     
-    if (numrep > 0 && numrep <= 50) {
-        let rep,i;
-        
-        for (i = numrep; i >= 1; i--) {
-            
-            for (rep = i; rep >= 1; rep--) {
-                document.write(i);
-            }
-            document.write("<br>");
-        }
-    } 
-    else {
-        alert("El número introducido no es válido");
+    for(let columna = fila; columna >= 1; columna-- ){
+        document.write(fila)
     }
-} 
-else {
-    alert("No has introducido un número");
+    document.write('<br>')
+
+}
+}else {
+    alert('ingresas una opcion invalida')
 }
