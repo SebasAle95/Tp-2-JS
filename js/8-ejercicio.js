@@ -1,11 +1,11 @@
-let numerorep = prompt("introduce numero de repeticiones");
+let repeticiones = prompt("introduce numero de repeticiones");
 
-if (Number(numerorep)== numerorep){
+if (Number(repeticiones)== repeticiones){
 
-    if (numerorep > 0 && numerorep <= 50){
+    if (repeticiones > 0 && repeticiones <= 50){
         let rep,i;
 
-        for (i=0; i <= numerorep; i++){
+        for (i=0; i <= repeticiones; i++){
 
             for (rep = 1;rep <= i;rep++){
                 document.write(rep);
